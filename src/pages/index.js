@@ -66,13 +66,13 @@ const IndexPage = () => {
       {/* Listing */}
       <Container className="borderBottom">
         <Row>
-          <Col sm="12" lg="3">
+          {/* <Col sm="12" lg="3">
             <aside>
               <h3>Collections</h3>
               <Filter />
             </aside>
-          </Col>
-          <Col sm="12" lg="9">
+          </Col> */}
+          <Col sm="12" lg="12">
             <section>
               <Cards>
                 {data.map((artisan, index) => {
