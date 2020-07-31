@@ -13,7 +13,14 @@ Cards.propTypes = {
 
 const Card = ({ src, alt, href, name, description, ...rest }) => (
   <div className={stylesheet.root} {...rest}>
-    <img className={stylesheet.img} src={src} alt={alt} />
+    <a
+      className={`caption ${stylesheet.photoLink}`}
+      href={href}
+      target="_blank"
+      rel="noreferrer"
+    >
+      <img className={stylesheet.img} src={src} alt={alt} />
+    </a>
     <h3>{name}</h3>
     <p>{description}</p>
     <a
