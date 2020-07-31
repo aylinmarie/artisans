@@ -14,8 +14,13 @@ const IndexPage = () => {
       <SEO title="Home" />
       <Container className="borderBottom">
         <Row>
-          <Col sm="12" lg="3">
-            <aside>
+          <Col
+            sm="12"
+            lg="3"
+            className="paddingNone"
+            style={{ overflow: 'auto' }}
+          >
+            <aside className="borderBottom borderRight">
               <h2>blackartisans</h2>
               <p className="caption">handmade work by black creators</p>
               <p>
@@ -25,7 +30,7 @@ const IndexPage = () => {
                 within the black community.
               </p>
             </aside>
-            <aside>
+            <aside className="borderRight" style={{ height: '100%' }}>
               <h3>Know someone?</h3>
               <p>
                 If you know of a black artisan that should be featured here,
