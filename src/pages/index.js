@@ -20,7 +20,7 @@ const IndexPage = () => {
             sm="12"
             lg="3"
             className="paddingNone"
-            style={{ overflow: 'auto' }}
+            style={{ overflow: 'hidden' }}
           >
             <aside className="borderBottom borderRight">
               <h2>blackartisans</h2>
