@@ -1,6 +1,19 @@
 .wrapper {
-  display: grid;
+  display: flex;
+  justify-content: space-evenly;
 }
 .root {
   max-width: 400px;
+}
+
+.link {
+  text-transform: uppercase;
+  &::after {
+    padding-left: 8px;
+    content: url('../../images/arrow.png');
+  }
+}
+
+img {
+  margin-bottom: 24px;
 }
