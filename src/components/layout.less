@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
+@import '../styles/tokens.less';
+
+/** Typography */
+body {
+  font-family: @typeface-base;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+  color: @black;
+}
+
+h1,
+h2,
+h3 {
+  font-family: @typeface-brand;
+  a,
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+a {
+  color: @black;
+  text-decoration: underline;
+  &:hover {
+    color: @stone;
+  }
+}
+
+.caption {
+  text-transform: uppercase;
+  font-family: Effra;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.08em;
+}
+
+/** General */
+img {
+  width: 100%;
+}
+
+aside,
+section {
+  padding: 24px;
+}
+
+.borderBottom {
+  border-bottom: 1px solid @black;
+  max-width: none;
+}
