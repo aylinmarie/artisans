@@ -3,6 +3,7 @@
 
 /** Typography */
 body {
+  background-color: @oatmeal;
   font-family: @typeface-base;
   font-size: 16px;
   line-height: 20px;
@@ -64,4 +65,9 @@ section {
 
 .paddingNone {
   padding: 0;
+}
+
+/** Overrides */
+.custom-control-input:checked ~ .custom-control-label::before {
+  background-color: @stone;
 }

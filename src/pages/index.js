@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext, useEffect } from 'react';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
@@ -6,6 +6,8 @@ import SEO from '../components/seo';
 import data from '../data/artists.json';
 
 import Card, { Cards } from '../components/Card';
+import Filter from '../components/Filter';
+
 import { Container, Row, Col } from 'shards-react';
 
 const IndexPage = () => {
@@ -64,19 +66,13 @@ const IndexPage = () => {
       {/* Listing */}
       <Container className="borderBottom">
         <Row>
-          <Col sm="12" lg="2">
+          <Col sm="12" lg="3">
             <aside>
               <h3>Collections</h3>
-              <ul>
-                <li>Art</li>
-                <li>Home Dec</li>
-                <li>LifeStyle</li>
-                <li>Food & Drinks</li>
-                <li>Prints</li>
-              </ul>
+              <Filter />
             </aside>
           </Col>
-          <Col sm="12" lg="10">
+          <Col sm="12" lg="9">
             <section>
               <Cards>
                 {data.map((artisan, index) => {
