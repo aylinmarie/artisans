@@ -1,14 +1,15 @@
-import React, { useContext, useEffect } from 'react';
+import React from 'react';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
 import data from '../data/artists.json';
-
-import Card, { Cards } from '../components/Card';
+import Card from '../components/Card';
 import Filter from '../components/Filter';
 
 import { Container, Row, Col } from 'shards-react';
+
+import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
 
 const IndexPage = () => {
   return (
@@ -74,9 +75,11 @@ const IndexPage = () => {
           </Col> */}
           <Col sm="12" lg="12">
             <section>
-              <Cards>
-                {data.map((artisan, index) => {
-                  if (index !== 0) {
+              <ResponsiveMasonry
+                columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
+              >
+                <Masonry gutter="32px">
+                  {data.slice(1).map((artisan, index) => {
                     return (
                       <Card
                         key={artisan.name}
@@ -87,11 +90,9 @@ const IndexPage = () => {
                         alt={artisan.alt}
                       />
                     );
-                  } else {
-                    return false;
-                  }
-                })}
-              </Cards>
+                  })}
+                </Masonry>
+              </ResponsiveMasonry>
             </section>
           </Col>
         </Row>

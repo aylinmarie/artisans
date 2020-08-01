@@ -3,16 +3,8 @@ import React from 'react';
 
 import stylesheet from './Card.module.less';
 
-const Cards = ({ children }) => {
-  return <div className={stylesheet.wrapper}>{children}</div>;
-};
-
-Cards.propTypes = {
-  children: PropTypes.node.isRequired,
-};
-
 const Card = ({ src, alt, href, name, description, ...rest }) => (
-  <div className={stylesheet.root} {...rest}>
+  <div {...rest}>
     <a
       className={`caption ${stylesheet.photoLink}`}
       href={href}
@@ -42,4 +34,4 @@ Card.propTypes = {
   description: PropTypes.string,
 };
 
-export { Card as default, Cards };
+export default Card;
