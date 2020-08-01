@@ -21,7 +21,7 @@ const Card = ({ src, alt, href, name, description, ...rest }) => (
       target="_blank"
       rel="noreferrer"
     >
-      Shop this artisan
+      Shop {name}
     </a>
   </div>
 );
