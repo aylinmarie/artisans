@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "black-artisans",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "A personal project to build a collective space for handcrafted products made by black creators.",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Aylin Marie <hello@aylinmarie.co>",
   "dependencies": {
     "gatsby": "^2.23.12",
     "gatsby-image": "^2.4.9",
