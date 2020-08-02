@@ -1,6 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Bellefair&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
 @import '../styles/tokens.less';
 
+/** General */
+:focus {
+  outline: @clay auto 2px;
+  outline-offset: 2px;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+}
+
+.block,
+section {
+  max-width: 1440px;
+  padding: 52px;
+  margin: auto;
+}
+
 /** Typography */
 body {
   background-color: @oatmeal;
@@ -23,7 +41,7 @@ h3 {
 }
 
 a {
-  color: @black;
+  color: @clay;
   text-decoration: underline;
   transition: color 0.3s ease;
 
@@ -46,18 +64,7 @@ p {
   margin-bottom: 24px;
 }
 
-/** General */
-img {
-  max-width: 100%;
-  width: 100%;
-}
-
-.block,
-section {
-  max-width: 1440px;
-  padding: 52px;
-  margin: auto;
-}
+/** Utility classes */
 
 .borderBottom {
   border-bottom: 1px solid @black;
