@@ -65,7 +65,7 @@ const IndexPage = () => {
       </Container>
 
       {/* Listing */}
-      <Container className="borderBottom">
+      <Container>
         <Row>
           {/* <Col sm="12" lg="3">
             <aside>

@@ -68,7 +68,6 @@ p {
 
 .borderBottom {
   border-bottom: 1px solid @black;
-  max-width: none;
 }
 
 .borderRight {
@@ -80,6 +79,7 @@ p {
 }
 
 .footer {
+  border-top: 1px solid @black;
   padding: 24px;
 
   .footerWrapper {
@@ -91,4 +91,8 @@ p {
 /** Overrides */
 .custom-control-input:checked ~ .custom-control-label::before {
   background-color: @stone;
+}
+
+.container {
+  max-width: 1400px;
 }
