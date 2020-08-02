@@ -37,15 +37,7 @@ const IndexPage = () => {
             <div className="borderRight block" style={{ height: '100%' }}>
               <h3>Know someone?</h3>
               <p>
-                If you know of a black artisan that should be featured here,
-                leave me a note at{' '}
-                <a
-                  href="mailto:hello@aylinmarie.co"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  hello@aylinmarie.co
-                </a>
+                If you know of a black artisan to be featured here, let me know!
               </p>
               <Button
                 type="tertiary"
