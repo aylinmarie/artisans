@@ -5,6 +5,7 @@ import SEO from '../components/seo';
 
 import data from '../data/artists.json';
 import Card from '../components/Card';
+import Button from '../components/Button';
 import Filter from '../components/Filter';
 
 import { Container, Row, Col } from 'shards-react';
@@ -46,6 +47,13 @@ const IndexPage = () => {
                   hello@aylinmarie.co
                 </a>
               </p>
+              <Button
+                type="tertiary"
+                href="mailto:hello@aylinmarie.co"
+                target="_blank"
+              >
+                Send me a note
+              </Button>
             </div>
           </Col>
           <Col sm="12" lg="9">
