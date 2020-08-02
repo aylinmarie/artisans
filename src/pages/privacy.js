@@ -5,7 +5,7 @@ import SEO from '../components/seo';
 
 import stylesheet from './Privacy.module.less';
 
-const IndexPage = () => {
+const PrivacyPage = () => {
   return (
     <Layout>
       <SEO title="Privacy Policy" />
@@ -87,4 +87,4 @@ const IndexPage = () => {
   );
 };
 
-export default IndexPage;
+export default PrivacyPage;
