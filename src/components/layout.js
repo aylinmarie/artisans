@@ -34,9 +34,10 @@ const Layout = ({ children }) => {
                 Aylin Marie
               </a>
             </div>
-            <div>
+            <nav className="footerNav">
               <a href="/privacy">Privacy Policy</a>
-            </div>
+              <a href="/accessibility">Accessibility</a>
+            </nav>
           </div>
         </footer>
       </div>
