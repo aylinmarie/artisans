@@ -6,6 +6,7 @@ import SEO from '../components/seo';
 import data from '../data/artists.json';
 import Card from '../components/Card';
 import Button from '../components/Button';
+import Block from '../components/Block';
 import Filter from '../components/Filter';
 
 import { Container, Row, Col } from 'shards-react';
@@ -29,7 +30,7 @@ const IndexPage = () => {
             className="paddingNone"
             style={{ overflow: 'hidden' }}
           >
-            <div className="borderBottom borderRight block">
+            <Block className="borderBottom borderRight">
               <h2>blackartisans</h2>
               <p className="caption">handmade work by black creators</p>
               <p>
@@ -38,8 +39,8 @@ const IndexPage = () => {
                 this project to collect and celebrate the talent that lives
                 within the black community.
               </p>
-            </div>
-            <div className="borderRight block" style={{ height: '100%' }}>
+            </Block>
+            <Block className="borderRight" style={{ height: '100%' }}>
               <h3>know someone?</h3>
               <p>
                 If you know of a black artisan to be featured here, let me know!
@@ -51,7 +52,7 @@ const IndexPage = () => {
               >
                 Send me a note
               </Button>
-            </div>
+            </Block>
           </Col>
           <Col sm="12" lg="9">
             <section>
@@ -83,7 +84,7 @@ const IndexPage = () => {
               <ResponsiveMasonry
                 columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
               >
-                <Masonry gutter="32px">
+                <Masonry gutter="60px">
                   {data.slice(1).map((artisan, index) => {
                     return (
                       <Card
