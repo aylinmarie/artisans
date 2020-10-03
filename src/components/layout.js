@@ -10,14 +10,10 @@ import PropTypes from 'prop-types';
 
 import Header from './Header/';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'shards-ui/dist/css/shards.min.css';
-
-import './layout.less';
 
 const Layout = ({ children }) => {
   return (
-    <>
+    <React.Fragment>
       <Header siteTitle="blackartisans" />
       <div>
         <main>{children}</main>
@@ -41,7 +37,7 @@ const Layout = ({ children }) => {
           </div>
         </footer>
       </div>
-    </>
+    </React.Fragment>
   );
 };
 

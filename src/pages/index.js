@@ -10,6 +10,11 @@ import Filter from '../components/Filter';
 
 import { Container, Row, Col } from 'shards-react';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'shards-ui/dist/css/shards.min.css';
+import '../styles/theme.less';
+
+
 import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
 
 const IndexPage = () => {
@@ -35,7 +40,7 @@ const IndexPage = () => {
               </p>
             </div>
             <div className="borderRight block" style={{ height: '100%' }}>
-              <h3>Know someone?</h3>
+              <h3>know someone?</h3>
               <p>
                 If you know of a black artisan to be featured here, let me know!
               </p>
