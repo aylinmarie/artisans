@@ -19,6 +19,7 @@ import '../styles/theme.less';
 import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
 
 const IndexPage = () => {
+
   return (
     <Layout>
       <SEO title="Home" />

@@ -5,15 +5,18 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from 'react';
+import React, {useState} from 'react';
 import PropTypes from 'prop-types';
 
 import Header from './Header/';
+import Button from './Button/';
 
+const Layout = ({ children}) => {
+  // Toggle dark/light theme
+const [isDarkMode, setDarkMode] = useState(false);
 
-const Layout = ({ children }) => {
   return (
-    <React.Fragment>
+    <div data-dark-theme={isDarkMode}>
       <Header siteTitle="blackartisans" />
       <div>
         <main>{children}</main>
@@ -30,6 +33,7 @@ const Layout = ({ children }) => {
                 Aylin Marie
               </a>
             </div>
+            <Button type="tertiary" onClick={()=>setDarkMode(!isDarkMode)}>{isDarkMode ? 'Light' : 'Dark'} Mode</Button>
             <nav className="footerNav">
               <a href="/privacy">Privacy Policy</a>
               <a href="/accessibility">Accessibility</a>
@@ -37,7 +41,7 @@ const Layout = ({ children }) => {
           </div>
         </footer>
       </div>
-    </React.Fragment>
+    </div>
   );
 };
 
